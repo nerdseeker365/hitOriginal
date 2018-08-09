@@ -204,36 +204,36 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  if((1.25 > $rateavg))
  {
  	$result = 'DISASTER';
- }elseif ((1.25 <= $rateavg) && ($rateavg < 2.0))
+ }elseif ((1.25 <= $rateavg) && ($rateavg < 2.5))
  {
  	$result = 'UTTER FLOP';
  }
- elseif ((2.0 <= $rateavg) && ($rateavg < 2.5))
+ elseif ((2.5 <= $rateavg) && ($rateavg < 3.0))
  {
  	$result = 'FLOP';
  }
- elseif ((2.5 <= $rateavg) && ($rateavg < 2.85))
+ elseif ((3.0 <= $rateavg) && ($rateavg < 3.25))
  {
  	$result = 'BELOW AVERAGE';
  }
- elseif ((2.85 <= $rateavg) && ($rateavg < 3.25))
+ elseif ((3.25 <= $rateavg) && ($rateavg < 3.4))
  {
  	$result = 'AVERAGE';
  }
- elseif ((3.25 <= $rateavg) && ($rateavg < 3.5))
+ elseif ((3.4 <= $rateavg) && ($rateavg < 3.65))
  {
  	$result = 'ABOVE AVERAGE';
  }
- elseif ((3.5 <= $rateavg) && ($rateavg < 3.75))
+ elseif ((3.65 <= $rateavg) && ($rateavg < 3.90))
  {
  	$result = 'HIT';
- } elseif ((3.75 <= $rateavg) && ($rateavg < 4.0))
+ } elseif ((3.90 <= $rateavg) && ($rateavg < 4.12))
  {
  	$result = 'SUPER HIT';
- } elseif ((4.0 <= $rateavg) && ($rateavg < 4.15))
+ } elseif ((4.12 <= $rateavg) && ($rateavg < 4.22))
  {
  	$result = 'BLOCKBUSTER';
- } elseif ($rateavg >= 4.15)
+ } elseif ($rateavg >= 4.22)
  {
  	$result = 'INDUSTRY HIT';
  }else{
@@ -322,7 +322,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_coll=$d600_cent*rand(300, 400)*100;
  		$max_coll = $wk1_coll+ $wk2_coll+  $d25_coll+  $d50_coll+  $d75_coll+  $d100_coll+ $d125_coll+ $d150_coll+ $d175_coll+ $d200_coll+ $d250_coll+ $d300_coll+ $d350_coll+ $d365_coll+ $d400_coll+ $d450_coll+ $d500_coll+ $d600_coll;
  		//echo 'Max Collectoion : '.$max_coll;
- 	}elseif ((1.25 <= $rateavg) && ($rateavg < 2.0))//Utter Flop
+ 	}elseif ((1.25 <= $rateavg) && ($rateavg < 2.5))//Utter Flop
  	{
  
  		$wk1_cent = round((($rel_cent/5.5)+($rel_cent/4.4)+($rel_cent/2.75))/3);
@@ -382,7 +382,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$max_coll = $wk1_coll+ $wk2_coll+  $d25_coll+  $d50_coll+  $d75_coll+  $d100_coll+ $d125_coll+ $d150_coll+ $d175_coll+ $d200_coll+ $d250_coll+ $d300_coll+ $d350_coll+ $d365_coll+ $d400_coll+ $d450_coll+ $d500_coll+ $d600_coll;
  		//echo 'Max Collectoion : '.$max_coll;
  	}
- 	elseif ((2.0 <= $rateavg) && ($rateavg < 2.5))//Flop
+ 	elseif ((2.5 <= $rateavg) && ($rateavg < 3.0))//Flop
  	{
  
  		$wk1_cent = round((($rel_cent/4.5)+($rel_cent/4.4)+($rel_cent/2.75))/3);
@@ -443,7 +443,8 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$max_coll = $wk1_coll+ $wk2_coll+  $d25_coll+  $d50_coll+  $d75_coll+  $d100_coll+ $d125_coll+ $d150_coll+ $d175_coll+ $d200_coll+ $d250_coll+ $d300_coll+ $d350_coll+ $d365_coll+ $d400_coll+ $d450_coll+ $d500_coll+ $d600_coll;
  		//echo 'Max Collectoion : '.$max_coll;
  	}
- 	elseif ((2.5 <= $rateavg) && ($rateavg < 3.0))//Below Avg
+	
+ 	elseif ((3.0 <= $rateavg) && ($rateavg < 3.25))//Below Avg
  	{
  
  		$wk1_cent = round((($rel_cent/2.5)+($rel_cent/2.4)+($rel_cent/2.75))/3);
@@ -501,7 +502,8 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$max_coll = $wk1_coll+ $wk2_coll+  $d25_coll+  $d50_coll+  $d75_coll+  $d100_coll+ $d125_coll+ $d150_coll+ $d175_coll+ $d200_coll+ $d250_coll+ $d300_coll+ $d350_coll+ $d365_coll+ $d400_coll+ $d450_coll+ $d500_coll+ $d600_coll;
  		//echo 'Max Collectoion : '.$max_coll;
  	}
- 	elseif ((3.0 <= $rateavg) && ($rateavg < 3.25))//Average
+	
+ 	elseif ((3.25 <= $rateavg) && ($rateavg < 3.4))//Average
  	{
  			
  		$wk1_cent = round((($rel_cent/2.25)+($rel_cent/4)+($rel_cent/2.25))/3);
@@ -559,7 +561,8 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		//echo 'Max Collectoion : '.$max_coll;
  			
  	}
- 	elseif ((3.25 <= $rateavg) && ($rateavg < 3.5))//Above Average
+	
+ 	elseif ((3.40 <= $rateavg) && ($rateavg < 3.65))//Above Average
  	{
  		$wk1_cent = round((($rel_cent/2.25)+($rel_cent/1.75)+($rel_cent/1.85))/3);
  		$wk2_cent = round((($wk1_cent/1.75)+($wk1_cent/1.65))/2);
@@ -616,7 +619,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		//echo 'Max Collectoion : '.$max_coll;
  
  	}
- 	elseif ((3.5 <= $rateavg) && ($rateavg < 3.75)) //HIT
+ 	elseif ((3.65 <= $rateavg) && ($rateavg < 3.90)) //HIT
  	{
  			
  		//// ********************  HIT *******************************
@@ -673,7 +676,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_coll=$d600_cent*rand(300, 400)*100;
  		$max_coll = $wk1_coll+ $wk2_coll+  $d25_coll+  $d50_coll+  $d75_coll+  $d100_coll+ $d125_coll+ $d150_coll+ $d175_coll+ $d200_coll+ $d250_coll+ $d300_coll+ $d350_coll+ $d365_coll+ $d400_coll+ $d450_coll+ $d500_coll+ $d600_coll;
  		//echo 'Max Collectoion : '.$max_coll;
- 	} elseif ((3.75 <= $rateavg) && ($rateavg < 4.0))
+ 	} elseif ((3.90 <= $rateavg) && ($rateavg < 4.10))
  	{
  		// ******************** SUPER  HIT *******************************
  		$wk1_cent = round((($rel_cent/1.15)+($rel_cent/1.20)+($rel_cent/1.35))/3);
@@ -730,7 +733,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_coll=$d600_cent*rand(300, 400)*100;
  		$max_coll = $wk1_coll+ $wk2_coll+  $d25_coll+  $d50_coll+  $d75_coll+  $d100_coll+ $d125_coll+ $d150_coll+ $d175_coll+ $d200_coll+ $d250_coll+ $d300_coll+ $d350_coll+ $d365_coll+ $d400_coll+ $d450_coll+ $d500_coll+ $d600_coll;
  		//echo 'Max Collectoion : '.$max_coll;
- 	} elseif ((4.0 <= $rateavg) && ($rateavg < 4.5))
+ 	} elseif ((4.10 <= $rateavg) && ($rateavg < 4.22))
  	{
  		// ******************** BLOCK BUSTER*******************************
  		$wk1_cent = round((($rel_cent/1.15)+($rel_cent/1.20)+($rel_cent/1.35))/3);
@@ -787,7 +790,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$max_coll = $wk1_coll+ $wk2_coll+  $d25_coll+  $d50_coll+  $d75_coll+  $d100_coll+ $d125_coll+ $d150_coll+ $d175_coll+ $d200_coll+ $d250_coll+ $d300_coll+ $d350_coll+ $d365_coll+ $d400_coll+ $d450_coll+ $d500_coll+ $d600_coll;
  		//echo 'Max Collectoion : '.$max_coll;
  
- 	} elseif ($rateavg >= 4.5)
+ 	} elseif ($rateavg >= 4.22)
  	{
  		// ******************** INDUSTRY HIT*******************************
  		$wk1_cent = round((($rel_cent/1.1)+($rel_cent/1.20)+($rel_cent/1.25))/3);
