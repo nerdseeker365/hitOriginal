@@ -36,7 +36,7 @@ $bg = "bg2.jpg";
 $jpg_image = imagecreatefromjpeg($bg);
 $fnt = rand(1,6).".TTF";
 $tfnt = rand(1,6).".TTF";
-$path = 'done/'.$tit.$rid.".jpeg";
+$path = 'walls/'.$tit.$rid.".jpeg";
   
 echo $path;
 

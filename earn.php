@@ -90,10 +90,10 @@ if (mysqli_num_rows($result) > 0) {
 
 	}
 }
-$path = 'walls/'.$title.$rid.".jpeg";
-$path_50 = 'walls/'.$title.$rid."_50.jpeg";
-$path_100 = 'walls/'.$title.$rid."_100.jpeg";
-$path_175 = 'walls/'.$title.$rid."_175.jpeg";
+$path = 'poster/walls/'.$title.$rid.".jpeg";
+$path_50 = 'poster/walls/'.$title.$rid."_50.jpeg";
+$path_100 = 'poster/walls/'.$title.$rid."_100.jpeg";
+$path_175 = 'poster/walls/'.$title.$rid."_175.jpeg";
 
 
 $sql = "SELECT * FROM tolly_release s WHERE s.uid = ".$uid." and s.rid = ".$rid;

@@ -65,16 +65,16 @@ $heroimg2 = clean(strtolower($a2)).'.png';
 $jpg_image = imagecreatefromjpeg($bg);
 $fnt = rand(1,13).".ttf";
 $tfnt = rand(1,13).".ttf";
-$path = 'done/'.$tit.$rid.".jpeg";
-$path_50 = 'done/'.$tit.$rid."_50.jpeg";
-$path_75 = 'done/'.$tit.$rid."_75.jpeg";
-$path_150 = 'done/'.$tit.$rid."_150.jpeg";
+$path = 'walls/'.$tit.$rid.".jpeg";
+$path_50 = 'walls/'.$tit.$rid."_50.jpeg";
+$path_75 = 'walls/'.$tit.$rid."_75.jpeg";
+$path_150 = 'walls/'.$tit.$rid."_150.jpeg";
 
 
-$path_100 = 'done/'.$tit.$rid."_100.jpeg";
-$path_175 = 'done/'.$tit.$rid."_175.jpeg";
+$path_100 = 'walls/'.$tit.$rid."_100.jpeg";
+$path_175 = 'walls/'.$tit.$rid."_175.jpeg";
 
-$ori = 'done/'.$tit.$rid.".jpeg";
+$ori = 'walls/'.$tit.$rid.".jpeg";
 
 //$fnt =$tfnt;
 echo $path;

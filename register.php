@@ -47,7 +47,7 @@
                     <div class="row">
                         <div class="col-md-3 center">
                             <div class="login-box">
-                                 <a href="http://www.hitandfut.com/" class="logo-text"><span><img src="pic/logo.png" alt="HitandFut" height="70px"></span></a>
+                                 <a href="" class="logo-text"><span><img src="pic/logo.png" alt="HitandFut" height="70px"></span></a>
                                 <hr style="height:1px;border:none;color:#333;background-color:#333;" >
                             <h4 class="text-center m-t-md">The Ultimate Movie Simulation Game</h4>
                  <hr style="height:1px;border:none;color:#333;background-color:#333;" >
