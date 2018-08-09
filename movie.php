@@ -198,10 +198,10 @@ function clean($string) {
 
 
 
-$path = 'poster/walls/'.$upp.".jpeg";
-$path_50 = 'poster/walls/'.$upp."_50.jpeg";
-$path_100 = 'poster/walls/'.$upp."_100.jpeg";
-$path_175 = 'poster/walls/'.$upp."_175.jpeg";
+$path = 'poster/walls/'.$upp.".jpeg?i=1";
+$path_50 = 'poster/walls/'.$upp."_50.jpeg?i=2";
+$path_100 = 'poster/walls/'.$upp."_100.jpeg?i=3";
+$path_175 = 'poster/walls/'.$upp."_175.jpeg?i=4";
 
 
 ?>
