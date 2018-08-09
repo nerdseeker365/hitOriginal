@@ -196,7 +196,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  	
  }
  
- $rateavg =  number_format((float)((($rateavg*7)+($crate+$crate))/8), 2, '.', '');
+ $rateavg =  number_format(((float)((($rateavg*7)+($crate+$crate))/8)-0.20), 2, '.', '');
  
  //$rateavg =0.78;
  $result = 'ok';
@@ -230,10 +230,10 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  } elseif ((3.75 <= $rateavg) && ($rateavg < 4.0))
  {
  	$result = 'SUPER HIT';
- } elseif ((4.0 <= $rateavg) && ($rateavg < 4.5))
+ } elseif ((4.0 <= $rateavg) && ($rateavg < 4.15))
  {
  	$result = 'BLOCKBUSTER';
- } elseif ($rateavg >= 4.5)
+ } elseif ($rateavg >= 4.15)
  {
  	$result = 'INDUSTRY HIT';
  }else{
@@ -302,7 +302,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  			
  			
  		// *******************DISATSTER -- COLLECTIONS********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(20000, 30000)*7);
+ 		$wk1_coll=($wk1_coll*rand(20000, 30000)*4.5)+($rel_cent*rand(25000, 45000)*1.5);;
  		$wk2_coll=$wk2_cent*rand(10000, 16000)*7;
  		$d25_coll=$d25_cent*rand(5000, 7600)*25;
  		$d50_coll=$d50_cent*rand(1000, 3000)*25;
@@ -361,7 +361,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_cent = round((($d500_cent/17)+($d500_cent/7))/2);
  			
  		// *******************UTTER FLOP-- COLLECTIONS********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(20000, 30000)*6)+($rel_cent*rand(25000, 45000)*1);
+ 		$wk1_coll=($wk1_coll*rand(20000, 40000)*5)+($rel_cent*rand(25000, 50000)*2);
  		$wk2_coll=$wk2_cent*rand(10000, 20000)*7;
  		$d25_coll=$d25_cent*rand(5000, 7600)*25;
  		$d50_coll=$d50_cent*rand(1000, 3000)*25;
@@ -422,7 +422,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  			
  
  		// *******************FLOP-- COLLECTIONS********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(20000, 30000)*4)+($rel_cent*rand(25000, 45000)*3);
+ 		$wk1_coll=($wk1_coll*rand(20000, 30000)*4)+($rel_cent*rand(15000, 55000)*3);
  		$wk2_coll=$wk2_cent*rand(15000, 20000)*7;
  		$d25_coll=$d25_cent*rand(7000, 8600)*25;
  		$d50_coll=$d50_cent*rand(2000, 5000)*25;
@@ -480,7 +480,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_cent = round((($d500_cent/7)+($d500_cent/7))/2);
  			
  		// *******************BELOW AVG--- COLLECTIONS********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(30000, 35000)*4)+($rel_cent*rand(35000, 65000)*3);
+ 		$wk1_coll=($wk1_coll*rand(10000, 55000)*4)+($rel_cent*rand(25000, 85000)*3);
  		$wk2_coll=$wk2_cent*rand(20000, 30000)*7;
  		$d25_coll=$d25_cent*rand(10000, 15600)*25;
  		$d50_coll=$d50_cent*rand(5000, 7000)*25;
@@ -537,7 +537,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_cent = round((($d500_cent/7)+($d500_cent/7))/2);
  			
  		// ******************* AVG--- COLLECTIONS********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(30000, 40000)*4)+($rel_cent*rand(35000, 75000)*3);
+ 		$wk1_coll=($wk1_coll*rand(20000, 70000)*4)+($rel_cent*rand(25000, 95000)*3);
  		$wk2_coll=$wk2_cent*rand(25000, 30000)*7;
  		$d25_coll=$d25_cent*rand(13000, 15600)*25;
  		$d50_coll=$d50_cent*rand(5000, 7000)*25;
@@ -594,7 +594,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_cent = round((($d500_cent/7)+($d500_cent/7))/2);
  
  		// *******************-ABOVE AVG--- COLLECTIONS********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(33000, 45000)*3)+($rel_cent*rand(45000, 55000)*2);
+ 		$wk1_coll=($wk1_coll*rand(23000, 60000)*4)+($rel_cent*rand(25000, 95000)*3);
  		$wk2_coll=$wk2_cent*rand(25000, 33000)*7;
  		$d25_coll=$d25_cent*rand(13000, 20000)*25;
  		$d50_coll=$d50_cent*rand(6000, 9000)*25;
@@ -653,7 +653,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_cent = round((($d500_cent/7)+($d500_cent/7))/2);
  
  		// ********************  HIT ********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(33000, 45000)*5)+($rel_cent*rand(45000, 55000)*2);
+ 		$wk1_coll=($wk1_coll*rand(33000, 75000)*4)+($rel_cent*rand(45000, 100000)*3);
  		$wk2_coll=$wk2_cent*rand(28000, 34000)*7;
  		$d25_coll=$d25_cent*rand(18000, 25000)*25;
  		$d50_coll=$d50_cent*rand(6000, 9000)*25;
@@ -710,7 +710,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  
  		// ******************** SUPER  HIT *** COLLECTIONS****************************
  
- 		$wk1_coll=($wk1_coll*rand(35000, 48000)*5)+($rel_cent*rand(45000, 60000)*2);
+ 		$wk1_coll=($wk1_coll*rand(35000, 70000)*5)+($rel_cent*rand(45000, 100000)*3);
  		$wk2_coll=$wk2_cent*rand(30000, 37000)*7;
  		$d25_coll=$d25_cent*rand(20000, 27000)*25;
  		$d50_coll=$d50_cent*rand(9000, 11000)*25;
@@ -766,7 +766,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_cent = round((($d500_cent/7)+($d500_cent/7))/2);
  
  		//------------------Block BUSTEr-- COLLECTIONS ---------
- 		$wk1_coll=($wk1_coll*rand(50000, 70000)*5)+($rel_cent*rand(60000, 75000)*2);
+ 		$wk1_coll=($wk1_coll*rand(50000, 90000)*5)+($rel_cent*rand(90000, 175000)*2);
  		$wk2_coll=$wk2_cent*rand(45000, 50000)*7;
  		$d25_coll=$d25_cent*rand(40000, 50000)*25;
  		$d50_coll=$d50_cent*rand(15000, 10000)*25;
