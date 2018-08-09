@@ -22,10 +22,10 @@ $dbname = "epiz_17259702_hit";
 */
 
 
-$servername = "sql111.epizy.com";
-$username = "epiz_17259702";
+$servername = "sql303.epizy.com";
+$username = "epiz_22541585";
 $password = "123abcABC";
-$dbname = "epiz_17259702_hit";
+$dbname = "epiz_22541585_hitandfut";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

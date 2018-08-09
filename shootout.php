@@ -204,8 +204,6 @@ if (mysqli_num_rows ( $result ) > 0) {
 	mysqli_query ( $conn, $sql3 );
 	$count++;
 	//===========================================================     ACTOR ==================================================
-	
-	
 
 
 	//===========================================================     actress1 ==================================================
@@ -377,49 +375,7 @@ if($rem<100000)
 		$count++;
 		}
 	//===========================================================     actress2 ==================================================
-	//===========================================================     ACTOR2 ==================================================
-	if($a2>0)
-	{
-		$sql3 = "SELECT a.actor_rating,a.actor_rate FROM tolly_actor a WHERE  a.actor_id = " . $a2;
-		$r1 = mysqli_query ( $conn, $sql3 );
-		$row1 = mysqli_fetch_assoc ( $r1 );
-		$ratt = $row1 ["actor_rating"];
-		$rem =  $row1 ["actor_rate"];
-		$crate = $crate +$ratt;
-		$rem = $rem+($point*1000000);
-	if($rem<100000)
-	{	
-		$rem = 150000;
-	}
-	if($ratt>9.9)
-	{
-		$ratt=10;
-	}
-		$ratt = $ratt+$point;
-		$sql3="UPDATE `tolly_actor` SET `actor_rate`=".$rem.", `actor_rating`=".$ratt." WHERE  `actor_id`=". $a2;
-		mysqli_query ( $conn, $sql3 );
-		$count++;
-	}
-	//===========================================================     ACTOR2 ==================================================
-	//===========================================================     ACTOR3 ==================================================
-		if($a3>0)
-	{$sql3 = "SELECT a.actor_rating,a.actor_rate FROM tolly_actor a WHERE  a.actor_id = " . $a3;
-	$r1 = mysqli_query ( $conn, $sql3 );
-	$row1 = mysqli_fetch_assoc ( $r1 );
-	$ratt = $row1 ["actor_rating"];
-	$rem =  $row1 ["actor_rate"];
-	$crate = $crate +$ratt;
-	$rem = $rem+($point*1000000);
-	if($rem<100000||$ratt>9.9)
-	{	$ratt=10;
-		$rem = 150000;
-	}
-	$ratt = $ratt+$point;
-	$sql3="UPDATE `tolly_actor` SET `actor_rate`=".$rem.", `actor_rating`=".$ratt." WHERE  `actor_id`=". $a3;
-	mysqli_query ( $conn, $sql3 );
-		$count++;
-		}
-	//===========================================================     ACTOR3 ==================================================
+
 	//===========================================================     actress3 ==================================================
 		if($ac3>0)
 	{$sql3 = "SELECT a.actress_rating,a.actress_rate FROM tolly_actress a WHERE  a.actress_id = " . $ac3;

@@ -435,12 +435,12 @@ $path_175 = 'poster/done/'.$upp."_175.jpeg";
                                        		 
                                        		if($_w2>0)
                                        		{
-                                       			echo "<a href=\"music.php?name=".$_w2_name."&id=".$_w2."\" class=\"btn btn-info btn-rounded\">". $_w2_name."</a>";
+                                       			echo "<a href=\"writer.php?name=".$_w2_name."&id=".$_w2."\" class=\"btn btn-info btn-rounded\">". $_w2_name."</a>";
                                        		}
                                        		
                                        		if($_w3>0)
                                        		{
-                                       			echo "<a href=\"music.php?name=".$_w3_name."&id=".$_w3."\" class=\"btn btn btn-danger btn-rounded\">". $_w3_name."</a>";
+                                       			echo "<a href=\"writer.php?name=".$_w3_name."&id=".$_w3."\" class=\"btn btn btn-danger btn-rounded\">". $_w3_name."</a>";
                                        		}
                                        		
                                        		

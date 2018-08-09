@@ -451,10 +451,10 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  			
  			
  		$d25_cent = 3+round((($wk2_cent/3.8)+($wk2_cent/3))/2);
- 		$d50_cent = round((($d25_cent/5)+($d25_cent/4))/2);
+ 		$d50_cent = round((($d25_cent/6)+($d25_cent/4))/2);
  			
  		if($d50_cent>=500) 		{
- 			$d50_cent = rand(425,499);
+ 			$d50_cent = rand(0,25);
  		}
  			
  			
@@ -504,15 +504,15 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  	elseif ((3.0 <= $rateavg) && ($rateavg < 3.25))//Average
  	{
  			
- 		$wk1_cent = round((($rel_cent/2.25)+($rel_cent/2)+($rel_cent/2.25))/3);
- 		$wk2_cent = round((($wk1_cent/1.95)+($wk1_cent/2))/2);
+ 		$wk1_cent = round((($rel_cent/2.25)+($rel_cent/4)+($rel_cent/2.25))/3);
+ 		$wk2_cent = round((($wk1_cent/1.95)+($wk1_cent/3))/2);
  			
  			
  		$d25_cent = 4+round((($wk2_cent/2.8)+($wk2_cent/3))/2);
- 		$d50_cent = 2+round((($d25_cent/3.7)+($d25_cent/3.25))/2);
+ 		$d50_cent = 1+round((($d25_cent/3.7)+($d25_cent/3.25))/2);
  
  		if($d50_cent>=500) 		{
- 			$d50_cent = rand(425,499);
+ 			$d50_cent = rand(0,50);
  		}
  
  		$d75_cent = round((($d50_cent/5)+($d50_cent/4.5))/2);
@@ -566,9 +566,9 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  			
  			
  		$d25_cent = 4+round((($wk2_cent/2.55)+($wk2_cent/2.55))/2);
- 		$d50_cent = 3+round((($d25_cent/3.3)+($d25_cent/2.75))/2);
+ 		$d50_cent = 2+round((($d25_cent/3.3)+($d25_cent/2.75))/2);
  		if($d50_cent>=500) 		{
- 			$d50_cent = rand(425,499);
+ 			$d50_cent = rand(4,150);
  		}
  
  			
@@ -594,7 +594,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d600_cent = round((($d500_cent/7)+($d500_cent/7))/2);
  
  		// *******************-ABOVE AVG--- COLLECTIONS********* COLLECTIONS **********************
- 		$wk1_coll=($wk1_coll*rand(30000, 45000)*2)+($rel_cent*rand(35000, 75000)*5);
+ 		$wk1_coll=($wk1_coll*rand(33000, 45000)*3)+($rel_cent*rand(45000, 55000)*2);
  		$wk2_coll=$wk2_cent*rand(25000, 33000)*7;
  		$d25_coll=$d25_cent*rand(13000, 20000)*25;
  		$d50_coll=$d50_cent*rand(6000, 9000)*25;
@@ -627,7 +627,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d25_cent = 4+round((($wk2_cent/2.35)+($wk2_cent/1.75))/2);
  		$d50_cent = 4+round((($d25_cent/3)+($d25_cent/1.75))/2);
  		if($d50_cent>=500) 		{
- 			$d50_cent = rand(425,499);
+ 			$d50_cent = rand(10,150);
  		}
  
  			
@@ -683,12 +683,12 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d25_cent = 15+round((($wk2_cent/2.25)+($wk2_cent/1.55))/2);
  		$d50_cent = 10+round((($d25_cent/2.85)+($d25_cent/1.55))/2);
  		if($d50_cent>=500) 		{
- 			$d50_cent = rand(425,499);
+ 			$d50_cent = rand(50,200);
  		}
  
  			
- 		$d75_cent = 2+round((($d50_cent/3.25)+($d50_cent/3.5))/2);
- 		$d100_cent = 1+round((($d75_cent/2.75)+($d75_cent/3.5))/2);
+ 		$d75_cent = 5+round((($d50_cent/3.25)+($d50_cent/3.5))/2);
+ 		$d100_cent = 4+round((($d75_cent/2.75)+($d75_cent/3.5))/2);
  			
  		$d125_cent = round((($d100_cent/4.35)+($d100_cent/3.75))/2);
  		$d150_cent = round((($d125_cent/5)+($d125_cent/5.75))/2);
@@ -740,12 +740,12 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d25_cent = 20+round((($wk2_cent/2.15)+($wk2_cent/1.25))/2);
  		$d50_cent = 15+round((($d25_cent/2.5)+($d25_cent/1.35))/2);
  		if($d50_cent>=500) 		{
- 			$d50_cent = rand(425,499);
+ 			$d50_cent = rand(60,300);
  		}
  
  			
- 		$d75_cent = 5+round((($d50_cent/3)+($d50_cent/3.25))/2);
- 		$d100_cent = 3+round((($d75_cent/2.5)+($d75_cent/3))/2);
+ 		$d75_cent = 15+round((($d50_cent/3)+($d50_cent/3.25))/2);
+ 		$d100_cent = 10+round((($d75_cent/2.5)+($d75_cent/3))/2);
  			
  		$d125_cent = 1+round((($d100_cent/3.35)+($d100_cent/2.75))/2);
  		$d150_cent = 1+round((($d125_cent/2.65)+($d125_cent/2.75))/2);
@@ -797,7 +797,7 @@ $rateavg = number_format((float)((($ratesum/9))/2), 2, '.', '');
  		$d25_cent = 25+round((($wk2_cent/2.15)+($wk2_cent/1.15))/2);
  		$d50_cent = 18+round((($d25_cent/2)+($d25_cent/1.25))/2);
  		if($d50_cent>=500) 		{
- 			$d50_cent = rand(425,499);
+ 			$d50_cent = rand(100,300);
  		}
  
  			
